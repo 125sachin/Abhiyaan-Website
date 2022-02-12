@@ -1373,4 +1373,13 @@ iframe {
     #Events{
         padding-left: 0;
     }
+    .content{
+        position: relative;
+    }
+    /* .bottomleft{
+        position: absolute;
+        bottom: 12%;
+       
+        left: 0;
+    } */
 }
