@@ -727,7 +727,7 @@ span {
     color: white;
     display: none;
     padding-top: 2rem;
-    padding: 50px;
+    /* padding: 50px; */
     text-align: center;
 }
 
@@ -748,7 +748,7 @@ span {
 }
 
 .subTeamMember1 {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     position: relative;
     margin-top: 5rem;
     /* text-align: center; */

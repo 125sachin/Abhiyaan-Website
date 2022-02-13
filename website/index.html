@@ -150,6 +150,108 @@
       background-size: cover;
       background-attachment: scroll;
     }
+
+    .s-profile-card {
+      position: relative;
+      font-family: sans-serif;
+      width: 260px;
+      height: 45px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 22px #3336;
+      transition: .6s;
+      margin: 0 25px;
+      /* display: flex; */
+    }
+
+    .s-profile-card:hover {
+      border-radius: 10px;
+      height: 45px;
+      width: 350px;
+    }
+
+    /* .profile-card .img{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: .6s;
+     z-index: 99;
+      
+   }*/
+    /* #name{display: inline-block;
+     /* align-items: center;
+     justify-content: center; 
+     font-size: 21px;
+     font-family: sans-serif;
+   } */
+    /* .profile-card:hover #name{
+     margin: 0;
+   } */
+    /* .profile-card:hover .img{
+     transform: translateY(60px);
+   } */
+    /* .img img{
+     width: 100%;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+   } */
+    .s-profile-card:hover img {
+      border-radius: 10px;
+    }
+
+    .s-profile-card h4 {
+      /* align-items: center; */
+      /* justify-content: center; */
+      padding: 0 10%;
+    }
+
+    .s-caption {
+      position: absolute;
+      right: 0;
+      top: 30%;
+      float: right;
+      text-align: center;
+      transform: translateX(90px), translateY(80px);
+      opacity: 0;
+      transition: .6s;
+    }
+
+    .s-profile-card:hover .s-caption {
+      opacity: 1;
+    }
+
+    .s-profile-card h3 {
+      font-size: 21px;
+      font-family: sans-serif;
+      color: black;
+      margin: 0;
+    }
+    .s-profile-card:hover .s-profile-card h3 {
+      /* margin-left: 0;
+      float: left;
+      padding-right: 0; */
+      display: block;
+    }
+
+    .s-profile-card h4 {
+      font-size: 15px;
+      color: #0c52a1;
+      font-family: sans-serif;
+      margin: 2px 0 9px 0;
+    }
+
+    .s-caption .s-social-links a {
+      color: #333;
+      margin-right: 10px;
+      font-size: 21px;
+      transition: .6s;
+    }
+
+    .s-social-links a:hover {
+      color: #0c52a1;
+    }
   </style>
 </head>
 
@@ -189,10 +291,10 @@
         background-repeat: no-repeat;
         
       ">
-       <div class="logo ">
-         <img class="anim" src="/Assets/Abhiyaan Logo.png" alt="">
-        <!-- <a href="#">Abhiyaan 2022</a> -->
-      </div>
+    <div class="logo ">
+      <img class="anim" src="/Assets/Abhiyaan Logo.png" alt="">
+      <!-- <a href="#">Abhiyaan 2022</a> -->
+    </div>
     <p class="logoPlacement anim">
       <span class="logoText">A</span>
       <span class="logoText">B</span>
@@ -223,8 +325,7 @@
         padding-top:2rem;
         overflow: hidden;
       ">
-    <video  width="80%" height="100vh" src="/Assets/Djnightss.MP4"
-      class="video" autoplay muted loop></video>
+    <video width="80%" height="100vh" src="/Assets/Djnightss.MP4" class="video" autoplay muted loop></video>
     <div class="abhiyaanInfo overlay">
       <div id="aboutText">
         <p style="
@@ -278,7 +379,10 @@
               Cultural
             </p> -->
             <p>
-              They are organized especially for the student's exposure to the unfamiliar traditions and cultures and to know about each other better. With the assistance of Student Council members, many events are organized as social gatherings which let students learn to value and respect each other's beliefs and culture, promoting humble engagement across differences in Abhiyaan 2022.
+              They are organized especially for the student's exposure to the unfamiliar traditions and cultures and to
+              know about each other better. With the assistance of Student Council members, many events are organized as
+              social gatherings which let students learn to value and respect each other's beliefs and culture,
+              promoting humble engagement across differences in Abhiyaan 2022.
             </p>
           </div>
         </div>
@@ -286,7 +390,7 @@
       <div class="containerr right">
         <div class="content" data-aos="fade-left">
           <img src="Assets/dj.jpg" alt="" srcset="" style="width: 100%; height: 80%" />
-            <div class="bottomleft" style="position: absolute;
+          <div class="bottomleft" style="position: absolute;
           bottom: 10%;
           right: 45%;
           font-weight: 700;
@@ -301,7 +405,10 @@
               Sports
             </p> -->
             <p style="color: black;">
-              Through sports, there can be a worthy balance between physical and mental growth of the students. Abhiyaan 2022 has arranged various sports events like football, volleyball, cricket, basketball, kho kho, kabbadi, etc. Further all, these events offer exciting prizes to the winners. The main purpose of conducting these events is to enhance the overall personality of all the participants.
+              Through sports, there can be a worthy balance between physical and mental growth of the students. Abhiyaan
+              2022 has arranged various sports events like football, volleyball, cricket, basketball, kho kho, kabbadi,
+              etc. Further all, these events offer exciting prizes to the winners. The main purpose of conducting these
+              events is to enhance the overall personality of all the participants.
             </p>
           </div>
         </div>
@@ -324,7 +431,9 @@
               Technical Events
             </p> -->
             <p>
-              What’s a college life without some fun events and competition? Here we are, back with ABHIYAAN 2022 with a great motive to inspire, develop and gain technical knowledge with so many fun events and competition, also a chance to earn many prizes and to have fun in a very knowledgeable way.
+              What’s a college life without some fun events and competition? Here we are, back with ABHIYAAN 2022 with a
+              great motive to inspire, develop and gain technical knowledge with so many fun events and competition,
+              also a chance to earn many prizes and to have fun in a very knowledgeable way.
             </p>
           </div>
         </div>
@@ -347,7 +456,11 @@
               NSS
             </p> -->
             <p>
-              The National Service Scheme (NSS) is an Indian government sponsored public service programme conducted by the Department of Youth Affairs and Sports of the Government of India. The motto of NSS states “NOT ME BUT YOU” which truly reflects the essence of selfless living. NSS is a voluntary association of young people who place community before self. The sole aim of the NSS is to provide hands-on experience to young students in delivering social service.
+              The National Service Scheme (NSS) is an Indian government sponsored public service programme conducted by
+              the Department of Youth Affairs and Sports of the Government of India. The motto of NSS states “NOT ME BUT
+              YOU” which truly reflects the essence of selfless living. NSS is a voluntary association of young people
+              who place community before self. The sole aim of the NSS is to provide hands-on experience to young
+              students in delivering social service.
             </p>
           </div>
         </div>
@@ -392,7 +505,8 @@
               <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="https://www.instagram.com/prathamesh_pdv/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/prathamesh-dhuri-3958a6211/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/prathamesh-dhuri-3958a6211/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -410,7 +524,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/aakash2103_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/aakash-singh-b49684217/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/aakash-singh-b49684217/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -427,7 +542,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/root_two_raj/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/rituraj-malvade-4375b9150/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/rituraj-malvade-4375b9150/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -444,7 +560,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/emad_desai/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/emad-desai-2382311a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/emad-desai-2382311a9/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -460,8 +577,10 @@
                 <p>Jt.General Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/imaashu_311297/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/ashish-kumar-kapal-5033a3208/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/imaashu_311297/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/ashish-kumar-kapal-5033a3208/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -479,7 +598,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/mrunmayi-padwal-01a570174/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/mrunmayi-padwal-01a570174/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -496,12 +616,13 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/vaibhav-pol-a2a88a211/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/vaibhav-pol-a2a88a211/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div>
-         
+
         </div>
       </div>
 
@@ -517,7 +638,8 @@
               <p>Cultural Secretary</p>
               <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                <a href="https://www.instagram.com/swarnim_mudaliar/" target="_blank" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/swarnim_mudaliar/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/swarnimmudaliar/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
@@ -536,7 +658,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/its_hyde/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/himanshu-joshi-1a4331218/" target="_blank"><i class="fab fa-linkedin" ></i></a>
+                  <a href="https://www.linkedin.com/in/himanshu-joshi-1a4331218/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -552,8 +675,10 @@
                 <p>Jt.Cultural Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/shruti_vairal/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/shruti-vairal-552296212/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/shruti_vairal/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/shruti-vairal-552296212/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -569,8 +694,10 @@
                 <p>Jt.Cultural Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/kabhikabhiadittee/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/aditi-vaidya-19737720a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/kabhikabhiadittee/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/aditi-vaidya-19737720a/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -586,8 +713,10 @@
                 <p>Jt.Cultural Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/_praptishende/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/prapti-shende-61b962188/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/_praptishende/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/prapti-shende-61b962188/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -603,8 +732,10 @@
                 <p>Jt.Cultural Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/sahil_salvi01/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/sahil-salvi-452ba11b9/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/sahil_salvi01/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/sahil-salvi-452ba11b9/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -624,8 +755,10 @@
               <p>Sports Secretary</p>
               <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                <a href="https://www.instagram.com/___._jadhav_.___/" target="_blank" ><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/parshuram-jadhav-b69276212/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/___._jadhav_.___/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/parshuram-jadhav-b69276212/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -642,8 +775,10 @@
                 <p>Jt.Sports Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/deepak.bhardwaj_150/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/deepak-bhardwaj-1a0a801a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/deepak.bhardwaj_150/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/deepak-bhardwaj-1a0a801a9/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -659,8 +794,10 @@
                 <p>Jt.Sports Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/__iamrahulllll/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/rahul-mhatre-a8692218b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/__iamrahulllll/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/rahul-mhatre-a8692218b/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -676,8 +813,10 @@
                 <p>Jt.Sports Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/gaurav_____007/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/gaurav-legha-601b6b209/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/gaurav_____007/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/gaurav-legha-601b6b209/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -694,7 +833,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/rohit_dnoxmb/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/rohit-domb-108b52221/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/rohit-domb-108b52221/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -710,8 +850,10 @@
                 <p>Jt.Sports Secretary</p>
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/saloni_sanjay_patil/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/saloni-sanjay-patil-75098020a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/saloni_sanjay_patil/" target="_blank"><i
+                      class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/saloni-sanjay-patil-75098020a/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -728,7 +870,8 @@
                 <div class="social-links">
                   <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                   <a href="https://www.instagram.com/nishuuu1409/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/nishant-kambli-s1409/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/nishant-kambli-s1409/" target="_blank"><i
+                      class="fab fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -786,75 +929,676 @@
 
       <div id="Oslo" class="tabcontent">
         <div class="subTeam">
-        <div class="subTeamMember1">
-          <div class="profile-card">
-            <div class="img">
-              <img src="Assets/team.jpg" />
-              <p style="color: white">Nithiyananthan Naykar</p>
-            </div>
-            <div class="caption">
-              <h3>Nithiyananthan Naykar</h3>
-              <p>NSS</p>
-              <div class="social-links">
-                <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                <a href="https://www.instagram.com/veera_26vanniyar/" target="_blank" ><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/r-nithiyananthan-nayakar-324610106/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
           <div class="subTeamMember1">
-            <div class="profile-card">
-              <div class="img">
-                <img src="Assets/team.jpg" />
-                <p style="color: white">Swaraj Khedekar</p>
-              </div>
-              <div class="caption">
-                <h3>Swaraj Khedekar</h3>
-                <p>NCC</p>
-                <div class="social-links">
-                  <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/__xx__swaraj__xx__/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/swaraj-khedekar-3aa5091a0/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="subTeamMember1">
-            <div class="profile-card">
-              <div class="img">
-                <img src="Assets/team.jpg" />
-                <p style="color: white">Mansi Hajare</p>
-              </div>
-              <div class="caption">
-                <h3>Mansi Hajare</h3>
-                <p>LR</p>
-                <div class="social-links">
-                  <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/_mansi_26_11_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="s-profile-card">
+              <h3>Nayakar Nithiyananthan</h3>
+              <h4>NSS</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
+
               </div>
             </div>
           </div>
           <div class="subTeamMember1">
-            <div class="profile-card">
-              <div class="img">
-                <img src="Assets/team.jpg" />
-                <p style="color: white">Abha Sonawane</p>
-              </div>
-              <div class="caption">
-                <h3>Abha Sonawane</h3>
-                <p>LR</p>
-                <div class="social-links">
-                  <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/abhaaaa_here/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="s-profile-card">
+              <h3>Khedekar Swaraj</h3>
+              <h4>NCC</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
                   <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Mansi Hajare</h3>
+              <h4>LR (Res)</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Abha Sonawane</h3>
+              <h4>LR (Open)</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Akash Shukla</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Prachi Khude</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Neha Jaiswar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Priyal Thakur</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Shruti Mhatre</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Sajid Shaikh</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Ameya Deodhar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Simrity Bhat</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Vaibhav Mungelwar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Chinmayee Mangale</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Nayan Ade</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Chaitali Padalkar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Poonam Shendkar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Shubham Tiwari</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Shivam Sadvilkar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Aditya Bhide</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Gauresh Kuthe</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Vedant Bhirud</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Varad Mhamunkar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Ayush gaikwad</h3>
+              <h4>Computer</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Amit Katyayan</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Farhan shaikh</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Saish Vilankar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Mayuresh Redii</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Lakshay Vashishtha</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Varun Pardeshi</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>
+                Vinit Chavan</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Rajveer Sarraf</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Adesh Jadhav</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Sachin Rathod</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Yash Kumbhar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Saloni Mhatre</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Rachana Nandi</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Suraj Kalagate</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+            <div class="s-profile-card">
+              <h3>Hardeek Karkare</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="subTeamMember1">
+
+            <div class="s-profile-card">
+              <h3>Anannya Chamat</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
               </div>
             </div>
           </div>
           
+          <div class="subTeamMember1">
+
+            <div class="s-profile-card">
+              <h3>Tejasvi Jadhav</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+
+            <div class="s-profile-card">
+              <h3>Atharv Satam</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+
+            <div class="s-profile-card">
+              <h3>Swastika Bhoir</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="subTeamMember1">
+
+            <div class="s-profile-card">
+              <h3>Manas Kalamkar</h3>
+              <h4>Student Representative</h4>
+              <div class="s-caption">
+
+                <div class="s-social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
         <!-- <div class="TeamMember1">
                     <div class="memberName">
@@ -948,7 +1692,7 @@
     <div class="contact">
       <center>
         <h2>
-          <span style="color: #ffffff">Contact </span><span style="color:rgb(247, 90, 11)">Us</span >
+          <span style="color: #ffffff">Contact </span><span style="color:rgb(247, 90, 11)">Us</span>
         </h2>
       </center>
       <center>
@@ -984,12 +1728,15 @@
   <footer style="text-align: center">
     <div>
       <div class="social-linkss">
-        <a style="color: rgb(247, 90, 11);" href="https://www.instagram.com/bvcoenm/"  target="_blank"><i class="fab fa-instagram"></i></a>
+        <a style="color: rgb(247, 90, 11);" href="https://www.instagram.com/bvcoenm/" target="_blank"><i
+            class="fab fa-instagram"></i></a>
         <a style="color: rgb(247, 90, 11);" href="#"><i class="fab fa-facebook"></i></a>
-        <a style="color: rgb(247, 90, 11);"href="https://www.youtube.com/channel/UC4Pwf6mDh3k0ra0p7QWDPnQ" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a style="color: rgb(247, 90, 11);"href="https://twitter.com/abhiyaan_bvcoe" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a style="color: rgb(247, 90, 11);"href="#"><i class="fab fa-linkedin"></i></a>
-        <a style="color: rgb(247, 90, 11);"href="#"><i class="fab fa-telegram"></i></a>
+        <a style="color: rgb(247, 90, 11);" href="https://www.youtube.com/channel/UC4Pwf6mDh3k0ra0p7QWDPnQ"
+          target="_blank"><i class="fab fa-youtube"></i></a>
+        <a style="color: rgb(247, 90, 11);" href="https://twitter.com/abhiyaan_bvcoe" target="_blank"><i
+            class="fab fa-twitter"></i></a>
+        <a style="color: rgb(247, 90, 11);" href="#"><i class="fab fa-linkedin"></i></a>
+        <a style="color: rgb(247, 90, 11);" href="#"><i class="fab fa-telegram"></i></a>
       </div>
       <p>Copyright © BVCOE, Navi Mumbai | All rights reserved</p>
     </div>
