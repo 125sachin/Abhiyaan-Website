@@ -1368,7 +1368,12 @@ iframe {
         background: linear-gradient(to right bottom, #16244780, #162447, #162447, #16244780, #e43f5a80);
     }
     #contentText{
-        bottom: -220px;
+        top: -27px;
+        position: relative;
+    }
+   
+    .maxratio{
+        bottom: -187px;
     }
     #Events{
         padding-left: 0;
