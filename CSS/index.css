@@ -942,7 +942,7 @@ span {
 /* Container around content */
 
 .containerr {
-    /* padding: 10px 40px; */
+    padding: 10px ;
     position: relative;
     background-color: inherit;
     width: 50%;
