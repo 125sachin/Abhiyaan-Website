@@ -727,7 +727,7 @@ span {
     color: white;
     display: none;
     padding-top: 2rem;
-    /* padding: 50px; */
+    padding: 0 0 50px 0;
     text-align: center;
 }
 
