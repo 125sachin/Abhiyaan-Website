@@ -1,0 +1,127 @@
+.eventcard {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* .eventcard p {
+    color: #b3b3b3;
+    font-weight: 300; }
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } */
+
+.eve-card a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+.eve-card a,
+a:hover {
+  text-decoration: none !important;
+}
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+.content {
+  padding: 2rem 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: -ms-flexbox;
+  /* display: flex; */
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.eventcard h2 {
+  font-size: 30px;
+}
+
+.bg-left-half {
+  position: relative;
+}
+.bg-left-half:before {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #f8f9fa;
+}
+
+.eve-card img {
+  margin-bottom: 20px;
+}
+
+.eve-card h3 {
+  font-size: 20px;
+  font-weight: 900 !important;
+}
+.eve-card h3 a {
+  color: #6c757d;
+}
+
+.eve-2-style .eve-nav {
+  display: none;
+}
+
+.eve-2-style .eve-dots {
+  text-align: center;
+  position: relative;
+  bottom: -30px;
+}
+.eve-2-style .eve-dots .eve-dot {
+  display: inline-block;
+}
+.eve-2-style .eve-dots .eve-dot span {
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  border-radius: 0px;
+  background: #cccccc;
+  -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+  -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+  transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+  margin: 3px;
+}
+.eve-2-style .eve-dots .eve-dot.active span {
+  background: #007bff;
+}
+.eve-2-style .eve-dots .eve-dot:active,
+.eve-2-style .eve-dots .eve-dot:focus {
+  outline: none;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

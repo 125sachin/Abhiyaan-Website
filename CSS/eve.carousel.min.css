@@ -1,0 +1,180 @@
+
+.eve-carousel,
+.eve-carousel .eve-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.eve-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.eve-carousel .eve-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+}
+.eve-carousel .eve-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.eve-carousel .eve-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.eve-carousel .eve-item,
+.eve-carousel .eve-wrapper {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+.eve-carousel .eve-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+.eve-carousel .eve-item img {
+  display: block;
+  width: 100%;
+}
+.eve-carousel .eve-dots.disabled,
+.eve-carousel .eve-nav.disabled {
+  display: none;
+}
+.no-js .eve-carousel,
+.eve-carousel.eve-loaded {
+  display: block;
+}
+.eve-carousel .eve-dot,
+.eve-carousel .eve-nav .eve-next,
+.eve-carousel .eve-nav .eve-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.eve-carousel .eve-nav button.eve-next,
+.eve-carousel .eve-nav button.eve-prev,
+.eve-carousel button.eve-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+.eve-carousel.eve-loading {
+  opacity: 0;
+  display: block;
+}
+.eve-carousel.eve-hidden {
+  opacity: 0;
+}
+.eve-carousel.eve-refresh .eve-item {
+  visibility: hidden;
+}
+.eve-carousel.eve-drag .eve-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.eve-carousel.eve-grab {
+  cursor: move;
+  cursor: grab;
+}
+.eve-carousel.eve-rtl {
+  direction: rtl;
+}
+.eve-carousel.eve-rtl .eve-item {
+  float: right;
+}
+.eve-carousel .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.eve-carousel .eve-animated-in {
+  z-index: 0;
+}
+.eve-carousel .eve-animated-out {
+  z-index: 1;
+}
+.eve-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.eve-height {
+  transition: height 0.5s ease-in-out;
+}
+.eve-carousel .eve-item .eve-lazy {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.eve-carousel .eve-item .eve-lazy:not([src]),
+.eve-carousel .eve-item .eve-lazy[src^=""] {
+  max-height: 0;
+}
+.eve-carousel .eve-item img.eve-lazy {
+  transform-style: preserve-3d;
+}
+.eve-carousel .eve-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+.eve-carousel .eve-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.1s ease;
+}
+.eve-carousel .eve-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+.eve-carousel .eve-video-playing .eve-video-play-icon,
+.eve-carousel .eve-video-playing .eve-video-tn {
+  display: none;
+}
+.eve-carousel .eve-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 0.4s ease;
+}
+.eve-carousel .eve-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
